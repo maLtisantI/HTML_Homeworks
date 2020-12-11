@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BRAND</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.ico">
+    <script>
+        document.querySelectorAll('.close-modal').forEach(el => {
+  el.onclick = () => {
+    const details = el.closest('details')
+    details.open = !details.open
+  }
+})
+
+document.querySelectorAll('.open-modal').forEach(el => {
+  el.onclick = () => {
+    const details = document.body.querySelector('details')
+    details.open = true
+  }
+})
+    </script>
+</head>
+<body>
+    <div class="header center">
+        <div class="header__left">
+            <a href="index.html"><img src="image/logo.svg" alt="logo"></a>
+            <details class="det_search">
+                <summary class="sum_seach"><img class="header_search" src="image/search.svg" alt="search"></summary>
+                <form action="#">
+                    <input class="search" type="search" placeholder="Поиск по сайту">
+                </form>
+            </details>
+        </div>
+        <div class="header__right">
+            <details class="det_menu">
+                <summary class="sum_menu">
+                    <img src="image/menu.svg" alt="menu">
+                </summary>
+                <div class="menu">
+                    <p style="padding-left: 34px; padding-top: 37px; font-size: 32px;">Menu</p>
+                    <div class="menu_box">
+                        <div class="men_item">
+                            <a href="#" class="pink_text als">Man</a>
+                            <a href="">Accessories</a>
+                            <a href="">Bags</a>
+                            <a href="">Denim</a>
+                            <a href="">T-Shirts</a>
+                        </div>
+                        <div class="men_item">
+                            <a href="#" class="pink_text als">Woman</a>
+                            <a href="">Accessories</a>
+                            <a href="">Jackets & Coats</a>
+                            <a href="">Polos</a>
+                            <a href="">T-Shirts</a>
+                            <a href="">Shirts</a>
+                        </div>
+                        <div class="men_item">
+                            <a href="#" class="pink_text als">KIDS</a>
+                            <a href="">Accessories</a>
+                            <a href="">Jackets & Coats</a>
+                            <a href="">Polos</a>
+                            <a href="">T-Shirts</a>
+                            <a href="">Shirts</a>
+                            <a href="">Bags</a>
+                        </div>
+                    </div>
+                </div>
+            </details>
+<!--Кривоватенько, изучить дальше по мере возможности--> 
+    <details class="modal-open">
+
+    <summary class="btn btn-primary"><img class="header_account" src="image/account.svg" alt="account"></summary>
+
+    <div class="modal show" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Вход в личный кабинет</h5>
+            <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+          </div>
+          <div class="mod center">
+            <div class="modal-body">
+                <form action="#">
+                    <p><i>Пожалуйста, заполните форму. Обязательные поля помечены </i><em>*</em></p>
+                    <fieldset>
+                      <legend>Контактная информация</legend>
+                        <label for="name">Имя <em>*</em></label>
+                        <input id="name"><br>
+                        <label for="telephone">Телефон</label>
+                        <input id="telephone"><br>
+                        <label for="email">Email <em>*</em></label>
+                        <input id="email"><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Придумайте пароль</legend>
+                        <label for="password">Пароль <em>*</em></label>
+                        <input id="password"><br>
+                        <label for="password">Повторит пароль <em>*</em></label>
+                        <input id="password"><br>
+                    </fieldset>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary close-modal" data-dismiss="modal">Уже есть аккаунт?</button>
+            <button type="button" class="btn btn-primary close-modal">Регистрация</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </details>
+<!---->
+            <a href=""><img src="image/cart.png" alt="cart"></a>
+        </div>
+    </div>
+    <div class="promo">
+        <div class="promo_left">
+            <img class="promo_img" src="image/promo_img.png" alt="promo">
+        </div>
+        <div class="promo_right">
+            <div class="promo_content">
+                <h1 class="promo_heading">THE BRAND</h1>
+                <p class="promo_text">OF LUXERIOUS <span class="pink_text">FASHION</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="hotD center">
+        <div class="hotD_item">
+            <img src="image/women.png" alt="women">
+            <div class="hotD_text">
+                <p class="white_text">30% OFF</p>
+                <p class="pink_text">FOR WOMEN</p>
+            </div>
+        </div>
+        <div class="hotD_item">
+            <img src="image/man.png" alt="man">
+            <div class="hotD_text">
+                <p class="white_text">HOT DEAL
+                    </p>
+                <p class="pink_text">FOR MEN</p>    
+            </div>
+        </div>
+        <div class="hotD_item">
+            <img src="image/kids.png" alt="kids">
+            <div class="hotD_text">
+                <p class="white_text">NEW ARRIVALS</p>
+                <p class="pink_text">FOR KIDS</p>
+            </div>
+        </div>
+    </div>    
+    <div class="acces center">
+        <img src="image/accesories.png" alt="accesories">
+        <div class="hotD_acces">
+            <div class="acces_text"><p class="white_text">LUXIROUS & TRENDY</p>
+                <p class="pink_text">ACCESORIES</p>
+            </div>
+        </div>
+    </div>
+    <div class="fetured center">
+        <p class="fet_black">Fetured Items</p>
+        <p class="grey">Shop for items based on what we featured in this week</p>
+        <div class="fetured_item-box center">
+            <div class="fetured_item mb">
+                <a class="fet_cart" href="">
+                    <img src="image/item1.png" alt="item1">
+                </a>
+                <a class="add_cart" href="#">
+                    <img src="image/logo_cart.svg" alt="add"><span class="add_text">Add to cart</span> 
+                </a>
+                <div class="cart_text">
+                    <a href="product.html">ELLERY X M'O CAPSULE</a>
+                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi</p><br>
+                    <p class="pink_text">$52.00</p>   
+                </div>
+            </div>
+            <div class="fetured_item mb">
+                <a class="fet_cart" href="">
+                    <img src="image/item2.png" alt="item1">
+                </a>
+                <a class="add_cart" href="#">
+                    <img src="image/logo_cart.svg" alt="add"><span class="add_text">Add to cart</span> 
+                </a>
+                <div class="cart_text">
+                    <a href="product.html">ELLERY X M'O CAPSULE</a>
+                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi</p><br>
+                    <p class="pink_text">$52.00</p>   
+                </div>
+            </div>
+            <div class="fetured_item mb">
+                <a class="fet_cart" href="">
+                    <img src="image/item3.png" alt="item1">
+                </a>
+                <a class="add_cart" href="#">
+                    <img src="image/logo_cart.svg" alt="add"><span class="add_text">Add to cart</span> 
+                </a>
+                <div class="cart_text">
+                    <a href="product.html">ELLERY X M'O CAPSULE</a>
+                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi</p><br>
+                    <p class="pink_text">$52.00</p>   
+                </div>
+            </div>
+            <div class="fetured_item mb">
+                <a class="fet_cart" href="">
+                    <img src="image/item4.png" alt="item1">
+                </a>
+                <a class="add_cart" href="#">
+                    <img src="image/logo_cart.svg" alt="add"><span class="add_text">Add to cart</span> 
+                </a>
+                <div class="cart_text">
+                    <a href="product.html">ELLERY X M'O CAPSULE</a>
+                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi</p><br>
+                    <p class="pink_text">$52.00</p>   
+                </div>
+            </div>
+            <div class="fetured_item mb">
+                <a class="fet_cart" href="">
+                    <img src="image/item5.png" alt="item1">
+                </a>
+                <a class="add_cart" href="#">
+                    <img src="image/logo_cart.svg" alt="add"><span class="add_text">Add to cart</span> 
+                </a>
+                <div class="cart_text">
+                    <a href="product.html">ELLERY X M'O CAPSULE</a>
+                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi</p><br>
+                    <p class="pink_text">$52.00</p>   
+                </div>
+            </div>
+            <div class="fetured_item mb">
+                <a class="fet_cart" href="">
+                    <img src="image/item6.png" alt="item1">
+                </a>
+                <a class="add_cart" href="#">
+                    <img src="image/logo_cart.svg" alt="add"><span class="add_text">Add to cart</span> 
+                </a>
+                <div class="cart_text">
+                    <a href="product.html">ELLERY X M'O CAPSULE</a>
+                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi</p><br>
+                    <p class="pink_text">$52.00</p>   
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div class="button">
+          <a href="catalog.html" class="all_item center">Browse all product</a> 
+    </div>
+    <div class="pre_footer center">
+        <div class="advantages">
+            <img class="adv_img" src="image/car.svg" alt="car">
+            <p class="white_text">Free Delivery</p><br>
+            <p class="white_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </div>
+        <div class="advantages">
+            <img class="adv_img" src="image/sales.svg" alt="sales">
+            <p class="white_text">Sales & discounts</p><br>
+            <p class="white_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </div>
+        <div class="advantages">
+            <img class="adv_img" src="image/QA.svg" alt="Quality">
+            <p class="white_text">Quality assurance</p><br>
+            <p class="white_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </div>
+    </div>
+    <div class="footer">
+            <div class="face center">
+                <img class="face_img" src="image/face.png" alt="face">
+                <p class="face_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+            </div>
+            <div class="feedback center">
+                <div class="feedback_text">
+                    <h1 class="subs1">SUBSCRIBE</h1>
+                    <p class="subs2">FOR OUR NEWLETTER AND PROMOTION</p>
+                </div>
+                <div class="box">
+                    <input class="email" type="email" placeholder="example@email.com">
+                    <input class="pink" type="submit" value="Subscribe">
+                </div>
+            </div>
+    </div>
+    <div class="social center">
+        <div class="white_text">&copy; 2021  Brand  All Rights Reserved.</div>
+        <div class="soc_symbols">
+            <img class="soc_img" src="image/facebook.svg" alt="facebook">
+            <img class="soc_img" src="image/instagram-instagram.jpg" alt="inst">
+            <img class="soc_img" src="image/pinterest.svg" alt="pin">
+            <img class="soc_img" src="image/twitter.svg" alt="twit">
+        </div>
+    </div>
+</body>
+</html>
